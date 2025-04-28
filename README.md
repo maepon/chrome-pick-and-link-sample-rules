@@ -2,6 +2,9 @@
 
 このリポジトリは、Chrome拡張機能「Pick And Link」用のルールファイル（YAML形式）をまとめたものです。
 
+- [Pick&Link - Chrome ウェブストア](https://chromewebstore.google.com/detail/picklink/akbfaabjgmkdllgcgbkbkoefefgnoook)
+- [maepon/chrome-pick-and-link](https://github.com/maepon/chrome-pick-and-link)
+
 ## 利用方法
 
 1. このリポジトリからルールファイル（`.yaml`）をダウンロードしてください。
@@ -25,6 +28,10 @@
 - [ISSNテストサンプル](samples/pick-code-link-issn.md)
 - [CVEテストサンプル](samples/pick-code-link-cve.md)
 - [JANテストサンプル](samples/pick-code-link-jan.md)
+
+## コントリビューションについて
+
+ルールやサンプルの追加・改善などの貢献を歓迎しています。詳細なガイドラインは[CONTRIBUTING.md](CONTRIBUTING.md)をご参照ください。
 
 ## ライセンス
 MIT License
