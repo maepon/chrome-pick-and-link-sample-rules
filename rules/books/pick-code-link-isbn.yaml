@@ -1,0 +1,17 @@
+# Pick And Linkルール: ISBNコードをECサイト検索リンクに変換
+# - ISBNコード（例: 978-4-1234-5678-9）を対象にします
+# - Amazon, ヨドバシ, 楽天ブックスで検索リンクを生成します
+
+rules:
+- codePattern: '[0-9\-]{9,16}[0-9X]'
+  title: ISBN2amazon
+  urlPattern: .*
+  urlTemplate: https://www.amazon.co.jp/s?k=isbn+{placeholder}
+- codePattern: '[0-9\-]{9,16}[0-9X]'
+  title: ISBN2yodobashi
+  urlPattern: .*
+  urlTemplate: https://www.yodobashi.com/?word={placeholder}
+- codePattern: '[0-9\-]{9,16}[0-9X]'
+  title: ISBN2rakuten
+  urlPattern: .*
+  urlTemplate: https://books.rakuten.co.jp/search?sitem={placeholder}

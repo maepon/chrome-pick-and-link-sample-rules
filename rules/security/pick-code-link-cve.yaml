@@ -1,0 +1,9 @@
+# Pick And Linkルール: CVE番号を脆弱性情報データベースで検索
+# - CVE番号（例: CVE-2024-12345）を対象にします
+# - 米国NVD（National Vulnerability Database）へのリンクを生成します
+
+rules:
+- codePattern: CVE-\d{4}-\d{4,7}
+  title: CVE to NVD
+  urlPattern: .*
+  urlTemplate: https://nvd.nist.gov/vuln/detail/{placeholder}

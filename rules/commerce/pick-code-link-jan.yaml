@@ -1,0 +1,13 @@
+# Pick And Linkルール: JANコード（バーコード）をECサイト検索リンクに変換
+# - JANコード（例: 4901234567890）を対象にします
+# - Amazonと楽天市場で検索リンクを生成します
+
+rules:
+- codePattern: \d{13}
+  title: JAN to Amazon
+  urlPattern: .*
+  urlTemplate: https://www.amazon.co.jp/s?k={placeholder}
+- codePattern: \d{13}
+  title: JAN to Rakuten
+  urlPattern: .*
+  urlTemplate: https://search.rakuten.co.jp/search/mall/{placeholder}/

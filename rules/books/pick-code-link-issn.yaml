@@ -1,0 +1,9 @@
+# Pick And Linkルール: ISSNコードを学術情報サイトで検索
+# - ISSNコード（例: 1234-5678）を対象にします
+# - 国立情報学研究所（CiNii）で検索リンクを生成します
+
+rules:
+- codePattern: \d{4}-\d{3}[\dX]
+  title: ISSN to CiNii
+  urlPattern: .*
+  urlTemplate: https://cir.nii.ac.jp/issn/{placeholder}
