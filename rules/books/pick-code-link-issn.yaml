@@ -3,7 +3,7 @@
 # - 国立情報学研究所（CiNii）で検索リンクを生成します
 
 rules:
-- codePattern: \d{4}-\d{3}[\dX]
-  title: ISSN to CiNii
-  urlPattern: .*
-  urlTemplate: https://cir.nii.ac.jp/issn/{placeholder}
+  - codePattern: '\d{4}-\d{3}[\dX]'
+    title: ISSN to CiNii (Search Mode)
+    urlPattern: .*
+    urlTemplate: https://cir.nii.ac.jp/articles?q={placeholder}
